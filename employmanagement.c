@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<string.h>
+#include<string.h> 
 #define ARRAY_SIZE 2
 #define NAME_SIZE 10
 struct Employee
