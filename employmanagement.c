@@ -1,5 +1,7 @@
-#include<stdio.h>
-#include<string.h> 
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
 #define ARRAY_SIZE 2
 #define NAME_SIZE 10
 struct Employee
@@ -14,7 +16,7 @@ int main()
     int index = 0;;
     for(index = 0; index < ARRAY_SIZE; ++index )
     {
-        printf("\nEnter details of Employee %d\n\n", index+1);
+        printf("\nEnter details of Employee %d\n", index+1);
         printf("Enter id number: ");
         scanf("%d", &emp[index].id);
         fflush(stdin);
@@ -39,7 +41,7 @@ int main()
     printf("Emp Name\tId\tSalary\n");
     for(index = 0; index < ARRAY_SIZE; ++index )
     {
-        printf("%s\t\t%d\t%.2f\n",
+        printf("%s\t%d\t%.2f\n",
                emp[index].name, emp[index].id, emp[index].salary);
     }
     return 0;
